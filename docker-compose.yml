@@ -1,0 +1,34 @@
+version: '2.0'
+
+services:
+  docker_php:
+    build: ./php
+    container_name: docker_php
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/var/www/html
+      - ./apache:/var/log/apache2/
+    depends_on:
+      - docker_mariadb
+
+  docker_mariadb:
+    image: mariadb
+    container_name: docker_mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: "db_test"
+      MYSQL_USER: "root"
+      MYSQL_ROOT_PASSWORD: "db1234"
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
+
+  docker_phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: docker_phpmyadmin
+    ports:
+      - "81:80"
+    depends_on:
+      - docker_mariadb
+    links:
+      - docker_mariadb:db
