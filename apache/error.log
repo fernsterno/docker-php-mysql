@@ -1,9 +1,0 @@
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Wed Sep 26 17:36:37.970242 2018] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/5.6.38 configured -- resuming normal operations
-[Wed Sep 26 17:36:37.970613 2018] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Wed Sep 26 17:37:25.086870 2018] [core:error] [pid 18] [client 10.0.2.2:53637] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
-[Wed Sep 26 17:37:28.542930 2018] [core:error] [pid 17] [client 10.0.2.2:53638] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
-[Wed Sep 26 17:37:38.779666 2018] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.4. Set the 'ServerName' directive globally to suppress this message
-[Wed Sep 26 17:38:10.763378 2018] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/5.6.38 configured -- resuming normal operations
-[Wed Sep 26 17:38:10.764253 2018] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
